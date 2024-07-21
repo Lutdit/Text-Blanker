@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Blanker</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Text Blanker</h1>
         <textarea id="inputText" rows="10" placeholder="Enter your text here..."></textarea>
-        <input type="number" id="numBlanks" placeholder="Number of words to blank out">
-        <button onclick="blankOutWords()">Blank Out Words</button>
-        <div id="outputText"></div>
-        <button onclick="checkAnswers()">Check Answers</button>
-        <div id="scoreDisplay"></div> <!-- Moved score display here -->
+        <button id="blankButton">Blank Selected Words</button>
+        <div id="output">
+            <p id="blankedContent"></p>
+        </div>
+        <button id="transferButton">Convert into Quiz</button>
+        <button id="saveToDOCS">Save to DOCS</button>
+        <div id="transferredText"></div>
+        <button id="checkAnswersButton">Check Answers</button>
+        <div id="checkResults"></div>
+        <b><div id="score"></div></b>
+        <button id="saveToPDFANS">Save to PDF</button>
     </div>
     <script src="script.js"></script>
 </body>
