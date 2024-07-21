@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Blanker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Blanker</h1>
+        <textarea id="inputText" rows="10" placeholder="Enter your text here..."></textarea>
+        <input type="number" id="numBlanks" placeholder="Number of words to blank out">
+        <button onclick="blankOutWords()">Blank Out Words</button>
+        <div id="outputText"></div>
+        <button onclick="checkAnswers()">Check Answers</button>
+        <div id="scoreDisplay"></div> <!-- Moved score display here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
